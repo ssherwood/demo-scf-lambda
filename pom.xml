@@ -21,7 +21,7 @@
 		<spring-boot-thin-layout.version>1.0.22.RELEASE</spring-boot-thin-layout.version>
 		<aws-lambda-events.version>2.2.7</aws-lambda-events.version>
 		<aws-lambda-core.version>1.2.0</aws-lambda-core.version>
-		<start-class>com.example.scf.lambda.DemoTrApplication</start-class>
+		<start-class>com.example.scf.lambda.DemoSCFApplication</start-class>
 	</properties>
 
 	<dependencies>
@@ -93,6 +93,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!-- without this I'm getting ClassNotFoundException
 				<dependencies>
 					<dependency>
 						<groupId>org.springframework.boot.experimental</groupId>
@@ -100,6 +101,7 @@
 						<version>${spring-boot-thin-layout.version}</version>
 					</dependency>
 				</dependencies>
+				-->
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
